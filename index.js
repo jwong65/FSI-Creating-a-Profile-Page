@@ -45,7 +45,30 @@ let feedingTimes = ['9:00 AM', '12:00 PM', "5:00 PM"]
 
 for (let i=0; i< feedingTimes.length; i++ ){
     let li = document.createElement('li');
-    li.textContent =feedingTimes[i];
+    li.textContent=feedingTimes[i];
     ul.append(li)
 }
+
 dogDetails.append(ul)
+
+let button  = document.createElement('button')
+button.textContent = "Click this button"
+button.style.fontSize = '35px'
+dogDetails.append(button)
+
+button.addEventListener('click', function(){
+    console.log("Button was clicked.")
+    ul.remove()
+    let link = document.createElement('link')
+    link.setAttribute('rel','stylesheet')
+    link.setAttribute('href', './styletwo.css')
+
+    let head = document.querySelector('head');
+    head.append(link)
+
+
+
+
+
+    paragraph.setAttribute('id', 'white-text')
+})
