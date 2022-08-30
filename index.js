@@ -31,11 +31,16 @@ dogDetails.append(header3)
 let paragraph = document.createElement('p')
 paragraph.textContent = "This gentle dog is aloof toward her owner, and never comes when called. She always acts as though any stranger she meets will harm her, and dislikes other animals."
 dogDetails.append(paragraph);
-/*
-let headerThreeTwo = document.createElement('ul');
 
+let headerThreeTwo = document.createElement('h3');
+headerThreeTwo.textContent = 'Feeding times:'
+dogDetails.append(headerThreeTwo)
+
+//header three two will be appended into the dog details.
+
+/*
+let ul = document.createElement('ul')
 let feedingTimes = ['9:00 AM', '12:00 PM', "5:00 PM"]
-*/
 
 for i-0; i< feedingTimes.length; i++ {
     let li = document.createElement('li');
@@ -43,3 +48,4 @@ for i-0; i< feedingTimes.length; i++ {
     ul.append(li)
 }
 dogDetails.append(ul)
+*/
